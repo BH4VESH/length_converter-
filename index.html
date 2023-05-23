@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="myform">
+
+
+        <div class="title_container">
+            <h2>CONVERTER</h2>
+        </div>
+
+
+
+        <div class="amount_container">
+            <label for="amount">Enter Amount :</label>
+            <input type="number" name="amount" id="amount" placeholder="Enter Number" >
+        </div>
+        <!-- onkeyup="calculate()" -->
+
+        <div class="unit_converter">
+            <div class="left">
+                <p>From</p>
+                <div class="select_container">
+                    
+                    <select  id="from" >
+
+                        <option value="centimeter">centimeter</option>
+                        <option value="meter">meter</option>
+                        <option value="kilometer">kilometer</option>
+                        <option value="millimeter">millimeter</option>
+                        <option value="foot">foot</option>
+                        <option value="inch">inch</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="middle"><img src="right-arrow.gif" style="height: 28px;" alt=""></div>
+
+            <div class="left">
+                <p>to</p>
+                <div class="select_container to">
+
+                    <select name="to" id="to">
+                        <option value="centimeter">centimeter</option>
+                        <option value="meter">meter</option>
+                        <option value="kilometer">kilometer</option>
+                        <option value="millimeter">millimeter</option>
+                        <option value="foot">foot</option>
+                        <option value="inch">inch</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="calculate">
+            <button type="submit" id="calculate" onclick="calculate()">Calculate</button>
+        </div>
+
+
+        <div class="result_container">
+            <label for="out">Result :</label>
+            <input type="number" name="out" id="out"     readonly   >
+        </div>
+        
+        <div class="reset">
+            <button type="reset" id="reset" class="reset" onsubmit="return false" >Reset</button>
+        </div>
+        <!-- onclick="res()" -->
+
+    </main>
+<script src="script.js"></script>
+
+</body>
+</html>

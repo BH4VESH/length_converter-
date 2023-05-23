@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(190deg,rgba(104, 86, 60, 0.355),#3692ba,rgb(127, 66, 184));
+
+
+}
+
+main{
+    background: linear-gradient(60deg,rgba(23, 122, 31, 0.355),#632d8d42,rgb(184, 66, 66));
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 65px rgba(196, 86, 22, 0.736);
+    
+}
+
+.title_container{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+label{
+    font-weight: bold;
+}
+
+.amount_container{
+    margin-bottom: 20px;
+    
+}
+
+.amount_container > input[type="number"]{
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.unit_converter{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.select_container > select{
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 40px;
+    
+}
+
+.left > p{
+    padding-left: 30px;
+}
+
+.middle{
+    padding-top: 22.5px;
+
+}
+
+.calculate{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom:9px ;
+    
+}
+
+.calculate > button{
+    text-align: center;
+    /* padding-top: 10px; */
+    border: 4px solid black;
+    width: 100px;
+    padding: 5px;
+    color: rgb(222, 114, 25);
+    background-color: #324a55;
+    border-radius: 40px;
+    
+    
+}
+
+.result_container{
+    margin-bottom: 20px;
+    
+}
+
+.result_container > input{
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 40px;
+    text-align: center;
+    
+}
+
+.reset > button{
+    text-align: center;
+    /* padding-top: 10px; */
+    border: 1px solid black;
+    width: 300px;
+    padding: 5px;
+    color: rgb(222, 114, 25);
+    background-color: #324a55;
+    border-radius: 40px;
+
+}
