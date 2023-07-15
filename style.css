@@ -21,7 +21,7 @@ body{
 
 }
 
-main{
+.main{
     background: linear-gradient(60deg,rgba(23, 122, 31, 0.355),#632d8d42,rgb(184, 66, 66));
     padding: 40px;
     border-radius: 30px;
@@ -81,7 +81,7 @@ label{
     
 }
 
-.calculate > button{
+.calculate > input{
     text-align: center;
     /* padding-top: 10px; */
     border: 4px solid black;
@@ -109,7 +109,8 @@ label{
     
 }
 
-.reset > button{
+.reset > input
+{
     text-align: center;
     /* padding-top: 10px; */
     border: 1px solid black;

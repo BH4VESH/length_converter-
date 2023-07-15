@@ -7,14 +7,9 @@ function calculate()
 {
     var a=from.value; 
     var b=to.value;
-    
     var input = input1.value;
+    let result;
     
-    let result ;
-    // if(input==null)
-    // {
-    //     alert("Please Enter Length Which You Can Convert");
-    // }
      if(a == b)
     {
         document.getElementById("out").value = input;   
@@ -181,7 +176,9 @@ function calculate()
     else if(a === "inch" && b === "foot")
     {
         result=input*(1/12);
+        console.log(input1);
         outputarea(result);
+
     } 
 
 }
@@ -194,7 +191,3 @@ function outputarea(result)
 
 
 
-// function res()
-// {
-//      document.getElementsById("myform").reset().value
-// }

@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="myform">
-
+   
+    <form class="main" id="form" >
 
         <div class="title_container">
             <h2>CONVERTER</h2>
         </div>
 
-
-
         <div class="amount_container">
             <label for="amount">Enter Amount :</label>
             <input type="number" name="amount" id="amount" placeholder="Enter Number" >
         </div>
-        <!-- onkeyup="calculate()" -->
 
         <div class="unit_converter">
             <div class="left">
@@ -63,21 +60,23 @@
 
 
         <div class="calculate">
-            <button type="submit" id="calculate" onclick="calculate()">Calculate</button>
+            <!-- <button type="submit" id="calculate" onclick="calculate()">Calculate</button> -->
+            <input type="button"  value="Calculate" onclick="calculate()">
         </div>
 
 
         <div class="result_container">
             <label for="out">Result :</label>
-            <input type="number" name="out" id="out"     readonly   >
+            <input type="number" name="out" id="out" readonly   >
         </div>
         
         <div class="reset">
-            <button type="reset" id="reset" class="reset" onsubmit="return false" >Reset</button>
+            <input type="reset" id="reset" class="reset"  value="Reset" >
+           
         </div>
-        <!-- onclick="res()" -->
-
-    </main>
+        
+    </form>
+  
 <script src="script.js"></script>
 
 </body>
